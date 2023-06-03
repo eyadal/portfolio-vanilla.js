@@ -8,8 +8,11 @@
 /* This is Home Page CSS */
 
 .hero {
-  height: 100vh;
   width: 100%;
+}
+#home {
+  height: 100vh;
+
   background-image: url(img/profile6.jpg);
   filter: brightness(70%);
   background-size: cover;
@@ -197,7 +200,10 @@ button:hover {
 }
 
 .card {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
   width: 335px;
   padding: 20px 35px;
   background-color: #191919;
@@ -205,8 +211,9 @@ button:hover {
   margin: 15px;
   position: relative;
   overflow: hidden;
-  text-align: center;
+  letter-spacing: 2px;
   border: 2px solid #cc9966;
+  color: white;
 }
 
 .card h5 {
