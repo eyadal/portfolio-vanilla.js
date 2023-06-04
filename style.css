@@ -4,11 +4,22 @@
   font-family: 'Josefin Sans' sans-serif;
   box-sizing: border-box;
 }
+body {
+  background: rgb(28, 28, 28);
+  background: radial-gradient(
+    circle,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(28, 28, 28, 1) 100%
+  );
+}
 
 /* This is Home Page CSS */
 
-.hero {
-  width: 100%;
+.wrapper {
+  min-height: 100vh;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 #home {
   height: 100vh;
@@ -17,10 +28,11 @@
   filter: brightness(70%);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 nav {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   padding-top: 45px;
@@ -149,7 +161,7 @@ h4 {
   width: 430px;
 }
 .about-text {
-  width: 550px;
+  width: 430px;
 }
 .main {
   width: 1130px;
@@ -174,6 +186,16 @@ button:hover {
   border: 2px solid #cc9966;
   cursor: pointer;
 }
+.button-two {
+  background-color: #cc9966;
+  color: #f5f5dc;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
 
 /* This is Service Page CSS */
 
@@ -184,9 +206,10 @@ button:hover {
 }
 
 .title h2 {
+  display: flex;
+  justify-content: center;
   color: #f5f5dc;
   font-size: 75px;
-  width: 1130px;
   margin: 30px auto;
   text-align: center;
 }
@@ -363,4 +386,19 @@ footer p:nth-child(1) {
   color: #f5f5dc;
   bottom: 35px;
   font-size: 14px;
+}
+
+/** Form page */
+.bg-indigo-600 {
+  background-color: #cc9966 !important;
+}
+.bg-indigo-600:hover {
+  background-color: transparent !important ;
+  border: 3px solid #cc9966 !important ;
+  cursor: pointer;
+}
+
+.bg-gray-900 {
+  background-color: #191919 !important;
+  border: 2px solid #cc9966;
 }

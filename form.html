@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact me</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="form.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="flex items-center min-h-screen">
+      <div class="container mx-auto">
+        <div
+          class="max-w-md mx-auto bg-gray-900 my-10 p-5 rounded-md shadow-sm"
+        >
+          <div class="text-center">
+            <h1 class="my-3 text-3xl font-semibold text-gray-100">
+              Contact Us
+            </h1>
+            <p class="text-gray-400 dark:text-gray-400">
+              Fill up the form below to send us a message.
+            </p>
+          </div>
+          <div class="m-7">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="b07e7557-05b2-4e63-81d0-ef10bdd89d66"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Web3Forms"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                id=""
+                style="display: none"
+              />
+
+              <div class="mb-6">
+                <label for="name" class="block mb-2 text-sm text-gray-400"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                  class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-200 text-sm focus:outline-none"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block mb-2 text-sm text-gray-400"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                  class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-200 text-sm focus:outline-none"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="phone" class="block mb-2 text-sm text-gray-400"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                  required
+                  class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-200 text-sm focus:outline-none"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block mb-2 text-sm text-gray-400"
+                  >Your Message</label
+                >
+
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  class="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-200 text-sm focus:outline-none"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-6">
+                <button
+                  type="submit"
+                  class="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none"
+                >
+                  Send Message
+                </button>
+              </div>
+              <p class="text-base text-center text-gray-400" id="result"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+//Hire me
+
 const getAllReposAndPrintOnScreen = async () => {
   const reposWrapper = document.querySelector('.box')
   try {
@@ -30,12 +32,6 @@ const getAllReposAndPrintOnScreen = async () => {
         description: data[24].description,
       },
     ]
-
-    repos.map((repo) => ({
-      name: repo.name,
-      url: repo.html_url,
-      description: repo.description,
-    }))
 
     let reposHtml = ''
     repos.map((repo) => {
